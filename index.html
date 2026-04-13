@@ -1,36 +1,105 @@
-from pathlib import Path
-import zipfile
-import textwrap
-
-base = Path("/mnt/data/kohlterpening-site")
-base.mkdir(parents=True, exist_ok=True)
-
-index_html = """<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kohl Terpening</title>
-  <meta name="description" content="Kohl Terpening — enterprise sales in AI infrastructure, with a focus on GPU, storage, and inference systems." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Kohl Terpening" />
+  <style>
+    body {
+      margin: 40px auto;
+      max-width: 760px;
+      padding: 0 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.45;
+      color: #111;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 24px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 18px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    ul ul {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #06c;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <div class="eyebrow">Enterprise AI infrastructure • Sales • Systems curiosity</div>
-      <h1>Kohl<br>Terpening</h1>
-      <p class="lead">
-        I work at the intersection of enterprise selling and AI infrastructure. My focus is on how modern storage,
-        compute, and inference systems translate into real business outcomes.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:kohl@kohlterpening.com">Email me</a>
-        <a class="btn" href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </section>
+  <h1>Kohl Terpening</h1>
 
-    <section>
-      <div class="grid
+  <p>Some things about me:</p>
+  <ul>
+    <li>Based in Tampa, Florida</li>
+    <li>Work in enterprise sales focused on AI infrastructure</li>
+    <li>Spend a lot of time thinking about GPU performance, storage architecture, and inference systems</li>
+    <li>Interested in the gap between impressive models and the infrastructure required to run them well</li>
+    <li>Like building practical AI workflows for prospect research, messaging, and account planning</li>
+    <li>Currently learning in public about AI infrastructure, selling, and robotics</li>
+    <li><a href="https://www.linkedin.com/in/kohlterpening/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+    <li><a href="mailto:kohl@kohlterpening.com">Email</a></li>
+  </ul>
+
+  <p>Some things I believe:</p>
+  <ul>
+    <li>Technical products should be explained in terms of outcomes, not jargon
+      <ul>
+        <li>People care about speed, cost, simplicity, and leverage</li>
+        <li>Clear thinking usually beats louder positioning</li>
+      </ul>
+    </li>
+    <li>Infrastructure matters more than most people think
+      <ul>
+        <li>AI performance is often bottlenecked by the system around the model</li>
+        <li>Storage, memory, networking, and orchestration shape what is actually possible</li>
+      </ul>
+    </li>
+    <li>Going deeper creates better opportunities
+      <ul>
+        <li>Domain knowledge compounds</li>
+        <li>Being genuinely useful is a competitive advantage</li>
+      </ul>
+    </li>
+    <li>Good sales is operational empathy
+      <ul>
+        <li>Understand how the buyer’s world actually works</li>
+        <li>Help them make a better decision, faster</li>
+      </ul>
+    </li>
+    <li>Small, consistent improvement matters
+      <ul>
+        <li>A little better every day becomes meaningful surprisingly fast</li>
+        <li>Most people quit before compounding gets visible</li>
+      </ul>
+    </li>
+    <li>You can build a lot with curiosity and persistence
+      <ul>
+        <li>You do not need to be the most technical person in the room to make technical things useful</li>
+        <li>Clear taste and follow-through go a long way</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
