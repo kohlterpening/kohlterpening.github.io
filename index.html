@@ -1,0 +1,36 @@
+from pathlib import Path
+import zipfile
+import textwrap
+
+base = Path("/mnt/data/kohlterpening-site")
+base.mkdir(parents=True, exist_ok=True)
+
+index_html = """<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kohl Terpening</title>
+  <meta name="description" content="Kohl Terpening — enterprise sales in AI infrastructure, with a focus on GPU, storage, and inference systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Enterprise AI infrastructure • Sales • Systems curiosity</div>
+      <h1>Kohl<br>Terpening</h1>
+      <p class="lead">
+        I work at the intersection of enterprise selling and AI infrastructure. My focus is on how modern storage,
+        compute, and inference systems translate into real business outcomes.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:kohl@kohlterpening.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-linkedin-here" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid
