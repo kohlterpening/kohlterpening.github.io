@@ -1,3 +1,6 @@
 body {
   font-family: serif;
 }
+li {
+  margin-bottom: 4px;
+}
